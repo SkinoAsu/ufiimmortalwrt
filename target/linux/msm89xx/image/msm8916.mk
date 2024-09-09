@@ -69,6 +69,26 @@ define Device/openstick-uz801
 endef
 TARGET_DEVICES += openstick-uz801
 
+#define Device/openstick-sp970
+#  $(Device/msm8916)
+#  DEVICE_VENDOR := GeXing
+#  DEVICE_MODEL := OpenStick SP970
+#  DEVICE_DTS := msm8916-gexing-sp970
+#  DEVICE_DTS_DIR := ../dts
+#  DEVICE_PACKAGES := openstick-tweaks wpad-basic-wolfssl qcom-msm8916-modem-openstick-sp970-firmware qcom-msm8916-openstick-sp970-wcnss-firmware qcom-msm8916-wcnss-openstick-sp970-nv
+#endef
+#TARGET_DEVICES += openstick-sp970
+
+define Device/openstick-sp970v8
+  $(Device/msm8916)
+  DEVICE_VENDOR := GeXing
+  DEVICE_MODEL := OpenStick SP970v8
+  DEVICE_DTS := msm8916-gexing-sp970v8
+  DEVICE_DTS_DIR := ../dts
+  DEVICE_PACKAGES := openstick-tweaks wpad-basic-wolfssl qcom-msm8916-modem-openstick-sp970v8-firmware qcom-msm8916-openstick-sp970v8-wcnss-firmware qcom-msm8916-wcnss-openstick-sp970v8-nv
+endef
+TARGET_DEVICES += openstick-sp970v8
+
 define Device/openstick-mf32
   $(Device/msm8916)
   DEVICE_VENDOR := XinXun
